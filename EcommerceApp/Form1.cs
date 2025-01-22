@@ -61,20 +61,6 @@ namespace EcommerceApp
 
         private void pictureBox1_Click(object sender, EventArgs e)
         {
-            my_cart mc = new my_cart();
-            userControl(mc);
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void toolTip1_Popup(object sender, PopupEventArgs e)
-        {
-            //Tool tip not working
-
-            ToolTip toolTip1 = new ToolTip();
             toolTip1.AutoPopDelay = 5000;
             toolTip1.InitialDelay = 1000;
             toolTip1.ReshowDelay = 500;
