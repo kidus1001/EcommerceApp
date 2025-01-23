@@ -44,7 +44,7 @@
             // 
             panel1.BackgroundImage = (Image)resources.GetObject("panel1.BackgroundImage");
             panel1.Controls.Add(panel2);
-            panel1.Location = new Point(24, 18);
+            panel1.Location = new Point(24, 15);
             panel1.Name = "panel1";
             panel1.Size = new Size(1236, 504);
             panel1.TabIndex = 0;
@@ -88,6 +88,7 @@
             button1.TabIndex = 3;
             button1.Text = "Login";
             button1.UseVisualStyleBackColor = true;
+            button1.Click += button1_Click;
             // 
             // label3
             // 

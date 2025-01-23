@@ -10,15 +10,14 @@ using System.Windows.Forms;
 
 namespace EcommerceApp
 {
-    public partial class Form3 : Form2
+    public partial class welcome_page : UserControl
     {
-        public Form3()
+        public welcome_page()
         {
             InitializeComponent();
-            this.Size = new Size (1307, 653);
         }
 
-        private void Form3_Load(object sender, EventArgs e)
+        private void welcome_page_Load(object sender, EventArgs e)
         {
 
         }
