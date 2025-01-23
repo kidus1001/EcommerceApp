@@ -1,6 +1,6 @@
 ﻿namespace EcommerceApp
 {
-    partial class HomePage
+    partial class welcome_page
     {
         /// <summary> 
         /// Required designer variable.
@@ -20,6 +20,7 @@
             base.Dispose(disposing);
         }
 
+
         #region Component Designer generated code
 
         /// <summary> 
@@ -28,45 +29,49 @@
         /// </summary>
         private void InitializeComponent()
         {
-            label1 = new Label();
-            flowLayoutPanel2 = new FlowLayoutPanel();
+            label4 = new Label();
+            label3 = new Label();
             SuspendLayout();
             // 
-            // label1
+            // label4
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Perpetua Titling MT", 14F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.Location = new Point(42, 14);
-            label1.Name = "label1";
-            label1.Size = new Size(179, 33);
-            label1.TabIndex = 1;
-            label1.Text = "PRODUCTS";
+            label4.AutoSize = true;
+            label4.Font = new Font("Segoe Print", 24F, FontStyle.Italic);
+            label4.ForeColor = SystemColors.HotTrack;
+            label4.Location = new Point(288, 252);
+            label4.Name = "label4";
+            label4.Size = new Size(762, 84);
+            label4.TabIndex = 2;
+            label4.Text = "E-COMMERCE APPLICATION";
             // 
-            // flowLayoutPanel2
+            // label3
             // 
-            flowLayoutPanel2.AutoScroll = true;
-            flowLayoutPanel2.Location = new Point(42, 50);
-            flowLayoutPanel2.Name = "flowLayoutPanel2";
-            flowLayoutPanel2.Size = new Size(1195, 438);
-            flowLayoutPanel2.TabIndex = 0;
-            flowLayoutPanel2.Paint += flowLayoutPanel2_Paint;
+            label3.AutoSize = true;
+            label3.Font = new Font("Segoe Print", 24F, FontStyle.Italic);
+            label3.ForeColor = SystemColors.HotTrack;
+            label3.Location = new Point(175, 151);
+            label3.Name = "label3";
+            label3.Size = new Size(1008, 84);
+            label3.TabIndex = 1;
+            label3.Text = "WELCOME TO HiLCoE's NON-OFFICIAL";
             // 
-            // HomePage
+            // welcome_page
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
             AutoScaleMode = AutoScaleMode.Font;
             BackColor = Color.FromArgb(255, 255, 192);
-            Controls.Add(flowLayoutPanel2);
-            Controls.Add(label1);
-            Name = "HomePage";
-            Size = new Size(1280, 522);
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Name = "welcome_page";
+            Size = new Size(1195, 459);
+            Load += welcome_page_Load;
             ResumeLayout(false);
             PerformLayout();
         }
 
-
         #endregion
-        private Label label1;
-        private FlowLayoutPanel flowLayoutPanel2;
+
+        private Label label4;
+        private Label label3;
     }
 }

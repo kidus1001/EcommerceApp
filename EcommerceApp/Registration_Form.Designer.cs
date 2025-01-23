@@ -94,11 +94,13 @@
             button2.TabIndex = 2;
             button2.Text = "REGISTER";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // textBox3
             // 
             textBox3.Location = new Point(262, 359);
             textBox3.Name = "textBox3";
+            textBox3.PasswordChar = '*';
             textBox3.Size = new Size(741, 31);
             textBox3.TabIndex = 7;
             // 
