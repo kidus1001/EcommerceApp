@@ -31,13 +31,13 @@
             panel1 = new Panel();
             label1 = new Label();
             dataGridView1 = new DataGridView();
+            button1 = new Button();
+            button2 = new Button();
             Column5 = new DataGridViewTextBoxColumn();
             Column2 = new DataGridViewTextBoxColumn();
             Column3 = new DataGridViewTextBoxColumn();
             Column4 = new DataGridViewTextBoxColumn();
             Column6 = new DataGridViewTextBoxColumn();
-            button1 = new Button();
-            button2 = new Button();
             panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
@@ -74,9 +74,31 @@
             dataGridView1.TabIndex = 2;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
+            // button1
+            // 
+            button1.BackColor = Color.FromArgb(255, 192, 192);
+            button1.Location = new Point(1136, 350);
+            button1.Name = "button1";
+            button1.Size = new Size(135, 53);
+            button1.TabIndex = 3;
+            button1.Text = "Clear History";
+            button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
+            // 
+            // button2
+            // 
+            button2.BackColor = Color.FromArgb(128, 128, 255);
+            button2.Location = new Point(1136, 259);
+            button2.Name = "button2";
+            button2.Size = new Size(135, 53);
+            button2.TabIndex = 4;
+            button2.Text = "Delete History";
+            button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
+            // 
             // Column5
             // 
-            Column5.HeaderText = "Order ID";
+            Column5.HeaderText = "User ID";
             Column5.MinimumWidth = 8;
             Column5.Name = "Column5";
             Column5.Width = 120;
@@ -109,28 +131,6 @@
             Column6.Name = "Column6";
             Column6.Width = 300;
             // 
-            // button1
-            // 
-            button1.BackColor = Color.FromArgb(255, 192, 192);
-            button1.Location = new Point(1136, 350);
-            button1.Name = "button1";
-            button1.Size = new Size(135, 53);
-            button1.TabIndex = 3;
-            button1.Text = "Clear History";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click;
-            // 
-            // button2
-            // 
-            button2.BackColor = Color.FromArgb(128, 128, 255);
-            button2.Location = new Point(1136, 259);
-            button2.Name = "button2";
-            button2.Size = new Size(135, 53);
-            button2.TabIndex = 4;
-            button2.Text = "Delete History";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
-            // 
             // CartHistory
             // 
             AutoScaleDimensions = new SizeF(10F, 25F);
@@ -159,6 +159,6 @@
         private DataGridViewTextBoxColumn Column6;
         private Button button1;
         private Button button2;
-        public static DataGridView dataGridView1;
+        public DataGridView dataGridView1;
     }
 }
